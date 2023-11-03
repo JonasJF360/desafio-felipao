@@ -12,10 +12,10 @@
 
 **O Que deve ser utilizado**
 
-- [*] Variáveis
-- [*] Operadores
-- [*] Laços de repetição
-- [*] Estruturas de decisões
+- [x] Variáveis
+- [x] Operadores
+- [x] Laços de repetição
+- [x] Estruturas de decisões
 
 ### Objetivo:
 
