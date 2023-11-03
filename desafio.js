@@ -23,7 +23,7 @@
 
 // ## Saída
 
-// Ao final deve se exibir uma mensagem:
+// Ao final deve-se exibir uma mensagem:
 // `"O Herói de nome **{nome}** está no nível de **{nivel}**"``
 
 const nome = 'Jonas';
