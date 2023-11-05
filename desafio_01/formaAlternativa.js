@@ -1,5 +1,5 @@
 // Uma  forma alternativa de fazer o desafio.
-function numeroAleatorio(menor, maior) {
+function generatorRandomNumber(menor, maior) {
     return Math.floor(Math.random() * (maior - menor) + menor);
 }
 
@@ -13,12 +13,12 @@ const nivel = [
 ];
 
 for (let i = 0; i < 20; i++) {
-    const nome = nomes[numeroAleatorio(0, 9)];
-    const userXP = numeroAleatorio(1, 12000);
+    const nome = nomes[generatorRandomNumber(0, 9)];
+    const userXP = generatorRandomNumber(1, 12000);
 
-    if (userXP <= 1000)
+    if (userXP < 1000)
         console.log(`O Herói de nome "${nome}" está no nível de "${nivel[0]}".`);
-    if (userXP > 1001 && userXP < 2001)
+    if (userXP >= 1001 && userXP < 2001)
         console.log(`O Herói de nome "${nome}" está no nível de "${nivel[1]}".`);
     if (userXP >= 2001 && userXP < 5001)
         console.log(`O Herói de nome "${nome}" está no nível de "${nivel[2]}".`);
