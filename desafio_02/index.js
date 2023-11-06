@@ -29,7 +29,7 @@
 
 // Ao final deve se exibir uma mensagem:`"O Herói tem de saldo de **{saldoVitorias}** está no nível de **{nivel}**"`
 
-function generatorRandomNumber(menor, maior) {
+function intGenerator(menor, maior) {
     return Math.floor(Math.random() * (maior - menor) + menor);
 }
 
@@ -44,8 +44,8 @@ function main() {
         'Diamante', 'Lendário', 'Imortal'
     ];
     for (let i = 0; i < 20; i++) {
-        const vitorias = generatorRandomNumber(2, 120);
-        const derrotas = generatorRandomNumber(1, vitorias);
+        const vitorias = intGenerator(2, 120);
+        const derrotas = intGenerator(1, vitorias);
         const saldoVitorias = calcularRankeada(vitorias, derrotas);
 
         if (saldoVitorias < 11)
